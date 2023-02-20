@@ -1,7 +1,7 @@
 ### Assignment Title
 Practical Application III: Comparing Classifiers
-**Author**
 
+**Author**
 Behailu Desta
 
 #### Executive summary
