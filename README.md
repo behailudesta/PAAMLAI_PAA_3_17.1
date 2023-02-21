@@ -58,11 +58,16 @@ Tuning the model: Adjust the model's hyperparameters  to optimize its performanc
 
 #### Results/Findings
 
-PCA reduced the number of features needed to train classifiers, reducing the number of non-important features by about 17 (53 to 36 principal components). The percent cumulative variance explanation was 95% with number of principal components at 36.
+- Principal Component Analysis (PCA) was used to decrease the number of features required to train classifiers. This was primarily achieved by reducing the number of non-essential features by approximately 17 (from 26 down to 17) while maintaining almost 100% cumulative variance.
 
-SVM and Decision Tree Classifier performed the best with the highest f1-scores (see PRC-Figure above and Table with scores). SVM took about 3000 to 67 times longer than the Decision Tree Classifier.
+- On a 16GB Core i7 machine, SVM is known for being computationally intensive and slow to process, which can be a challenge in most cases.
 
-We used the GridsearchCV for the best hyperparameters. These were used with the Decision Tree Classifier to estimate the Gini-feature Importance for the 53 features. We find that the feature importance is the highest for the duration of the phone marketing calls, the number of days previous contact, and age. The months also factor in with March, October and June being most important. This is similar finding with the Moro and Laureano paper.
+- Decision Tree Classifier used to estimate the feature Importance for the 26features. We find that the feature importance is the highest for the age, number of years employed, euribor 3 month rate ... etc.
+![Feature Importance](./images/feature_importance.jpg)
+
+- SVM and Decision Tree Classifier performed the best with the highest f1-scores (see PRC-Figure above and Table with scores). SVM took about 3000 to 67 times longer than the Decision Tree Classifier.
+
+- We used the GridsearchCV for the best hyperparameters. These were used with the Decision Tree Classifier to estimate the Gini-feature Importance for the 53 features. We find that the feature importance is the highest for the duration of the phone marketing calls, the number of days previous contact, and age. The months also factor in with March, October and June being most important. This is similar finding with the Moro and Laureano paper.
 
 #### Outline of project
 
