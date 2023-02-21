@@ -40,7 +40,7 @@ These are the main steps followed in this project.
 - Data collection and cleaning: Collect data that is relevant to the classification task and remove any unnecessary data. Clean the data by handling missing values, removing duplicates, and addressing any inconsistencies or errors.
 
 - Data preprocessing: Convert the raw data into a format that can be used by the model. we used scaling, OneHotencoding and feature selection using PCA.
-  ![PCA Plot](./images/pca.jpg)
+  ![PCA Plot](./images/pca1.jpg)
 - The data class provided is heavily imbalanced, we used Random Over Sampling and Random Undersampling to imporove model performance and reduce bias.
   ![yes_no_ratio](./images/yes_no_ratio.jpg)
 
