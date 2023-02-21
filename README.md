@@ -37,6 +37,8 @@ we have used the four common classification models namely,
 
 prior to using the classification models we have cleaned  the 
 
+![plot](./image/pca.jpg)
+
 #### Results/Findings
 
 PCA reduced the number of features needed to train classifiers, reducing the number of non-important features by about 17 (53 to 36 principal components). The percent cumulative variance explanation was 95% with number of principal components at 36.
@@ -47,7 +49,7 @@ We used the GridsearchCV for the best hyperparameters. These were used with the 
 
 #### Outline of project
 
-- [Link to notebook 1]()
+- [Link to notebook 1](www.google.com)
 - [Link to notebook 2]()
 - [Link to notebook 3]()
 
