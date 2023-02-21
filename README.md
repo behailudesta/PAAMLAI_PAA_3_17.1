@@ -35,9 +35,26 @@ we have used the four common classification models namely,
 - Decision Trees.
 - Support Vector Machines.
 
-prior to using the classification models we have cleaned  the 
+These are the main steps followed in this project.
 
-![PCA Plot](./images/pca.jpg)
+- Data collection and cleaning: Collect data that is relevant to the classification task and remove any unnecessary data. Clean the data by handling missing values, removing duplicates, and addressing any inconsistencies or errors.
+
+- Data preprocessing: Convert the raw data into a format that can be used by the model. we used scaling, OneHotencoding and feature selection using PCA.
+  ![PCA Plot](./images/pca.jpg)
+- The data class provided is heavily imbalanced, we used Random Over Sampling and Random Undersampling to imporove model performance and reduce bias.
+  ![yes_no_ratio](./images/yes_no_ratio.jpg)
+
+- Splitting data: Split the data into training and testing sets. The training set is used to train the model and the testing set is used to evaluate the model's performance.
+
+Choosing a model: Select a classification model that is appropriate for the task at hand. This may involve researching different models and comparing their performance on similar tasks.
+
+Training the model: Train the model on the training set using an appropriate algorithm and hyperparameters. This may involve techniques such as cross-validation or grid search to optimize the model's performance.
+
+Evaluating the model: Evaluate the model's performance on the testing set using appropriate metrics such as accuracy, precision, recall, or F1 score.
+
+Tuning the model: Adjust the model's hyperparameters  to optimize its performance on the validation set.
+
+
 
 #### Results/Findings
 
