@@ -46,13 +46,13 @@ These are the main steps followed in this project.
 
 - Splitting data: Split the data into training and testing sets. The training set is used to train the model and the testing set is used to evaluate the model's performance.
 
-Choosing a model: Select a classification model that is appropriate for the task at hand. This may involve researching different models and comparing their performance on similar tasks.
+- Choosing a model: Select a classification model that is appropriate for the task at hand. This may involve researching different models and comparing their performance on similar tasks.
 
-Training the model: Train the model on the training set using an appropriate algorithm and hyperparameters. This may involve techniques such as cross-validation or grid search to optimize the model's performance.
+- Training the model: Train the model on the training set using an appropriate algorithm and hyperparameters. This may involve techniques such as cross-validation or grid search to optimize the model's performance.
 
-Evaluating the model: Evaluate the model's performance on the testing set using appropriate metrics such as accuracy, precision, recall, or F1 score.
+- Evaluating the model: Evaluate the model's performance on the testing set using appropriate metrics such as accuracy, precision, recall, F1 score and plot of confusion matrics for the different data models.
 
-Tuning the model: Adjust the model's hyperparameters  to optimize its performance on the validation set.
+- Tuning the model: Adjust the model's hyperparameters  to optimize its performance on the validation set, we provide the comparision tables and confusion matrix plot.
 
 
 
@@ -62,17 +62,18 @@ Tuning the model: Adjust the model's hyperparameters  to optimize its performanc
 
 - On a 16GB Core i7 machine, SVM is known for being computationally intensive and slow to process, which can be a challenge in most cases.
 
-- Decision Tree Classifier used to estimate the feature Importance for the 26features. We find that the feature importance is the highest for the age, number of years employed, euribor 3 month rate ... etc.
+- Decision Tree Classifier used to estimate the feature Importance for the 26 features. We find that the feature importance is the highest for the age, number of years employed, euribor 3 month rate ... etc.
 ![Feature Importance](./images/feature_importance.jpg)
 
 - SVM and Decision Tree Classifier performed the best with the highest f1-scores (see PRC-Figure above and Table with scores). SVM took about 3000 to 67 times longer than the Decision Tree Classifier.
 
-- We used the GridsearchCV for the best hyperparameters. These were used with the Decision Tree Classifier to estimate the Gini-feature Importance for the 53 features. We find that the feature importance is the highest for the duration of the phone marketing calls, the number of days previous contact, and age. The months also factor in with March, October and June being most important. This is similar finding with the Moro and Laureano paper.
+- We used the GridsearchCV for the best hyperparameters and performance optimization.
+
+- Out of all the classifiers used, the Decision Tree Classifier exhibited the best f1-score performance, and fit time. 
 
 #### Outline of project
 
-- [Link to notebook 1](www.google.com)
-- [Link to notebook 2]()
-- [Link to notebook 3]()
+- [Link to notebook](Practical_Application_3.ipynb)
+
 
 
