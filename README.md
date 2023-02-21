@@ -37,7 +37,7 @@ we have used the four common classification models namely,
 
 prior to using the classification models we have cleaned  the 
 
-![plot](./image/pca.jpg)
+![PCA Plot](./images/pca.jpg)
 
 #### Results/Findings
 
